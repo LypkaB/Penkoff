@@ -19,9 +19,12 @@ header {
 }
 
 .header-wrap {
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
 }
 
 .logo {
@@ -32,10 +35,12 @@ header {
 
 /*----- nav menu -----*/
 nav {
-    flex-basis: 80%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
 }
 
 ul {
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -60,16 +65,19 @@ nav a {
     text-transform: uppercase;
 }
 
-/*----- tabs -----*/
+/*<----- Tabs ----->*/
 .tabs {
+    margin-bottom: 20px;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     border-bottom: 1px solid #eaeaea;
 }
 
 h1 {
-    /*margin: 0;*/
     font-size: 22px;
     color: #95989a;
 }
@@ -80,5 +88,32 @@ h1 {
 }
 
 .tabs li:hover {
+    cursor: pointer;
+}
+
+/*----- tabs-content -----*/
+.tabs-content {
+    padding: 40px 45px 43px 45px;
+    border-radius: 10px;
+    background: #f2f4ff url("../img/tabs-content-img.png") no-repeat bottom right 135px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    margin-bottom: 90px;
+    font-size: 18px;
+    max-width: 320px;
+}
+
+button {
+    padding: 16px 33px;
+    font-size: 16px;
+    font-weight: 700;
+    border-right: 6px;
+    background-color: #fcde29;
+    border: none;
     cursor: pointer;
 }
