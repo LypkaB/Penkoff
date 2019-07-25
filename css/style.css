@@ -92,15 +92,32 @@ h1 {
     position: relative;
 }
 
+.tabs li::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    background-color: #fcde29;
+    transition: width 0.2s;
+}
+
 .tabs li:hover {
     cursor: pointer;
+}
+
+.tabs li:hover::after {
+    cursor: pointer;
+    width: 100%;
 }
 
 /*----- tabs-content -----*/
 .tabs-content {
     padding: 40px 45px 43px 45px;
     border-radius: 10px;
-    background: #f2f4ff url("../img/tabs-content-img.png") no-repeat bottom right 135px;
+    background: #f2f4ff url("../img/tabs-content__img.png") no-repeat bottom right 135px;
     margin-bottom: 40px;
 }
 
@@ -164,4 +181,53 @@ button {
 
 .card-wrap {
     display: flex;
+    justify-content: space-between;
+}
+
+/*<----- Best bank ----->*/
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section-subtitle {
+    display: block;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.best-section__title {
+    margin-bottom: 10px;
+}
+
+.best-card {
+    padding: 0;
+    width: 240px;
+    height: 260px;
+    position: relative;
+}
+
+.best-card__image {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.best-card__image_left {
+    left: 0;
+    transform: translateX(0);
+}
+
+.best-card__image_right {
+    left: 29%;
+    transform: translateX(0);
+}
+
+.best-card__text {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
 }
