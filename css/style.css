@@ -155,7 +155,23 @@ button {
 .card {
     padding: 23px;
     border-radius: 10px;
-    background: #f2f4ff;
+    background-color: #f2f4ff
+}
+
+.card-1 {
+    background: #f2f4ff url("../img/best-card/best-card__img-1.png") no-repeat bottom left 5px;
+}
+
+.card-2 {
+    background: #f2f4ff url("../img/best-card/best-card__img-2.png") no-repeat bottom left;
+}
+
+.card-3 {
+    background: #f2f4ff url("../img/best-card/best-card__img-3.png") no-repeat right;
+}
+
+.card-4 {
+    background: #f2f4ff url("../img/best-card/best-card__img-4.png") no-repeat center bottom;
 }
 
 .features-content {
@@ -279,4 +295,16 @@ input {
 .button-block {
     display: flex;
     justify-content: flex-end;
+}
+
+/*<----- Footer ----->*/
+footer {
+    padding: 60px 0;
+    background-color: #f7f7f7;
+}
+
+.footer__text {
+    max-width: 670px;
+    margin: auto;
+    text-align: center;
 }
